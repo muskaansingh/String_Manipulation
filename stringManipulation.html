@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">        
+        <meta name="author" content="CHANGE-ME">
+        <meta name="description" content="CHANGE-ME">
+        
+        
+        <meta name="theme-color" content="#000000">
+        
+        <link rel="shortcut icon" href="favicon.ico">
+        
+        <title>STRING MANIPULATION IN JAVASCRIPT</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        
+    </head>
+
+    <body>    
+       <h1>
+        
+          STRING MANIPULATION IN JAVASCRIPT..!!!
+        
+        </h1>
+        
+        <p id="text">Quamquam malis fabulas mentitum, non esse cernantur laboris a admodum tamen ullamco ita admodum magna quid aut tamen si consequat amet e probant transferrem in deserunt quis fore non nisi, eiusmod duis culpa mandaremus cillum do an tamen voluptatibus. Ex summis elit legam appellat. Mandaremus fugiat proident, velit offendit o quae noster est fore mentitum o tamen culpa, probant culpa varias sed minim. A illum quae aliqua ingeniis, tempor dolore hic eiusmod transferrem se veniam ad iudicem ad quem an ingeniis qui aliqua. Quamquam quis litteris, tempor adipisicing sed mandaremus. Ne anim nescius excepteur, aliquip quem mandaremus incididunt ita iis se noster eram multos, legam expetendis ullamco. An incididunt arbitrantur, se duis nisi duis excepteur.</p>
+        
+        
+        <!-- Scripts -->
+        
+        <script>
+            
+            var sentence = document.getElementById("text");
+            var text = sentence.innerHTML;
+            
+            var upperCase = text.toUpperCase();
+            var lowerCase = text.toLowerCase();
+            
+            var firstTenCharacters = text.substr(0,10);
+            var exceptTenCharacters = text.substr(10);
+            
+            // split method is used to convert the STRING in the form of ARRAY
+            
+            var words = text.split(" ");   // separate every word which coming after space in the form of array
+            console.log(words);
+            
+            var bracketwords = words.join(")(");    // bracket not occurs at starting and ending 
+            var brcktwords = "(" + words.join(")(")+ ")";
+            
+            
+            // for getting selected elements
+            
+            var firstThreeElements = words.slice(0,3);
+            var middlewords = words.slice(5,15);
+            var makeSentence = middlewords.join("=======");
+            
+            
+            // Change the original text of the page........
+            
+                //sentence.innerHTML = makeSentence;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
